@@ -20,14 +20,16 @@
           name="name"
           id="name"
           placeholder="Enter your first and last name"
+          required
       /></label>
       <label for="email" id="email-label"
         >Email:
         <input
-          type="text"
+          type="email"
           name="email"
           id="email"
           placeholder="Enter a valid email"
+          required
       /></label>
       <label for="number" id="number-label"
         >Age(optional):
@@ -39,6 +41,52 @@
           max="120"
           placeholder="What's your age?"
       /></label>
+      <label for="dropdown" id="dropdown-label">
+        What is your favorite feature?
+        <select name="dropdown" id="dropdown">
+          <option value="">(choose one)</option>
+          <option value="1">Challenges</option>
+          <option value="2">Tutorials</option>
+          <option value="3">Articles</option>
+        </select>
+      </label>
+      <fieldset>
+        <label>
+          Would you recommend us?
+          <input type="radio" name="nps" id="nps-1" value="definitively" />
+          Definitively
+          <input type="radio" name="nps" id="nps-2" value="maybe" /> Maybe
+          <input type="radio" name="nps" id="nps-3" value="nope" /> Nope
+        </label>
+      </fieldset>
+      <label id="languages-label">
+        What Languages would you like to learn?
+        <input type="checkbox" name="languages" value="http" id="languages" />
+        HTTP
+        <input type="checkbox" name="languages" value="css" id="languages" />
+        CSS
+        <input type="checkbox" name="languages" value="js" id="languages" /> JS
+        <input type="checkbox" name="languages" value="react" id="languages" />
+        React
+        <input type="checkbox" name="languages" value="node" id="languages" />
+        NodeJS
+        <input type="checkbox" name="languages" value="ruby" id="languages" />
+        Ruby on Rails
+        <input type="checkbox" name="languages" value="vue" id="languages" />
+        Vue
+        <input
+          type="checkbox"
+          name="languages"
+          value="angular"
+          id="languages"
+        />
+        Angular
+      </label>
+      <label for="comments" id="comments-label">
+        Any comments for us?
+        <textarea name="comments" id="comments" cols="40" rows="8"></textarea>
+      </label>
+      <input type="submit" value="Submit" id="submit" />
     </form>
   </body>
 </html>
