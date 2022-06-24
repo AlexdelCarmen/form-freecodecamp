@@ -7,5 +7,38 @@
     <title>Survey Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label"
+        >Name:
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your first and last name"
+      /></label>
+      <label for="email" id="email-label"
+        >Email:
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter a valid email"
+      /></label>
+      <label for="number" id="number-label"
+        >Age(optional):
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="13"
+          max="120"
+          placeholder="What's your age?"
+      /></label>
+    </form>
+  </body>
 </html>
