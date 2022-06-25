@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  background-image: url("/assets/sunny-sheth-sPddhjVSU6A-unsplash.jpg");
+  background-size: cover;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+  color: #cfcfcf;
+}
+
+form {
+  max-width: 800px;
+  min-width: 300px;
+  width: 60vw;
+  margin: 3rem auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 1rem;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  width: 80%;
+  margin: 1.5rem auto 1.5rem 3rem;
+  height: 2rem;
+  font-size: 16px;
+  background-color: #3d3b3b;
+  border: 1px solid #3d3b3b;
+  border-radius: 5px;
+  padding-left: 1rem;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+label {
+  margin-left: 1rem;
+
+  margin-top: 1rem;
+}
+
+fieldset {
+  border: none;
+  margin: 1rem 0 0 0;
+}
+
+fieldset > label {
+  display: block;
+  padding: 0;
+  height: 1rem;
+}
+
+input[type="radio"] {
+  width: unset;
+  display: inline-block;
+  vertical-align: middle;
+  margin: unset;
+  margin-right: 0.5rem;
+}
+
+input[type="checkbox"] {
+  width: unset;
+  display: inline-block;
+  vertical-align: middle;
+  margin: unset;
+  margin-right: 0.5rem;
+}
+
+fieldset > label:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+textarea {
+  height: unset;
+  padding: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #0c6a09;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+  background-color: #0c6a20;
+  transform: scale(101%);
+}

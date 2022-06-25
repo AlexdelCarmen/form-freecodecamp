@@ -50,38 +50,54 @@
           <option value="3">Articles</option>
         </select>
       </label>
+
       <fieldset>
+        Would you recommend us?
         <label>
-          Would you recommend us?
           <input type="radio" name="nps" id="nps-1" value="definitively" />
           Definitively
+        </label>
+        <label>
           <input type="radio" name="nps" id="nps-2" value="maybe" /> Maybe
+        </label>
+        <label>
           <input type="radio" name="nps" id="nps-3" value="nope" /> Nope
         </label>
       </fieldset>
-      <label id="languages-label">
+
+      <fieldset>
         What Languages would you like to learn?
-        <input type="checkbox" name="languages" value="http" id="languages" />
-        HTTP
-        <input type="checkbox" name="languages" value="css" id="languages" />
-        CSS
-        <input type="checkbox" name="languages" value="js" id="languages" /> JS
-        <input type="checkbox" name="languages" value="react" id="languages" />
-        React
-        <input type="checkbox" name="languages" value="node" id="languages" />
-        NodeJS
-        <input type="checkbox" name="languages" value="ruby" id="languages" />
-        Ruby on Rails
-        <input type="checkbox" name="languages" value="vue" id="languages" />
-        Vue
-        <input
-          type="checkbox"
-          name="languages"
-          value="angular"
-          id="languages"
-        />
-        Angular
-      </label>
+        <label>
+          <input type="checkbox" name="languages" value="http" />
+          HTTP
+        </label>
+        <label>
+          <input type="checkbox" name="languages" value="css" />
+          CSS
+        </label>
+        <label><input type="checkbox" name="languages" value="js" /> JS</label>
+        <label>
+          <input type="checkbox" name="languages" value="react" />
+          React
+        </label>
+        <label>
+          <input type="checkbox" name="languages" value="node" />
+          NodeJS
+        </label>
+        <label>
+          <input type="checkbox" name="languages" value="ruby" />
+          Ruby on Rails
+        </label>
+        <label>
+          <input type="checkbox" name="languages" value="vue" />
+          Vue
+        </label>
+        <label>
+          <input type="checkbox" name="languages" value="angular" />
+          Angular
+        </label>
+      </fieldset>
+
       <label for="comments" id="comments-label">
         Any comments for us?
         <textarea name="comments" id="comments" cols="40" rows="8"></textarea>
